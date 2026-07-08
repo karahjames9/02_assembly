@@ -1,0 +1,32 @@
+---
+title: "02_Assembly"
+output: html_document
+---
+
+
+
+Assembly stats for RedBean:
+sum = 3639650, n = 120, ave = 30330.42, largest = 143809
+N50 = 48273, n = 23
+N60 = 36829, n = 32
+N70 = 28879, n = 43
+N80 = 22438, n = 57
+N90 = 13359, n = 79
+N100 = 2697, n = 120
+N_count = 0
+Gaps = 0
+
+Assembly total length: 3639650
+The number of contigs: 120 contigs
+N50(best assembled half): 48273bp
+-- wanting larger but fewer pieces--
+
+
+Assembly for Flye:
+
+
+
+
+
+
+
