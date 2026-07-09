@@ -22,10 +22,86 @@ N50(best assembled half): 48273bp
 -- wanting larger but fewer pieces--
 
 
-Assembly for Flye:
+slurm 345:
+	Total length:	5164396
+	Fragments:	77
+	Fragments N50:	119681
+	Largest frg:	368927
+	Scaffolds:	0
+	Mean coverage:	7
+	
+	
+	assembly.fasta: small
+	sum = 5192207, n = 77, ave = 67431.26, largest = 374326
+N50 = 119681, n = 16
+N60 = 99731, n = 20
+N70 = 73541, n = 26
+N80 = 48300, n = 35
+N90 = 31578, n = 48
+N100 = 2777, n = 77
+N_count = 0
+Gaps = 0
+
+Assembling graphs with Bandage: 
+- Biological entities such as chromosomes or plasmids will form separate graphs
+- Separated graphs can also occur if coverage is very low and no reads to join parts of the assembly together
+- Highly joined regions tend to occur because repeats create ambiguities. There are too many connections and the assembly has trouble choosing the correct path between them. 
+
+Assemnly.fasta: large 
+ Total length:   7449545
+        Fragments:      52
+        Fragments N50:  1775300
+        Largest frg:    3378345
+        Scaffolds:      0
+        Mean coverage:  20
 
 
-
+Quast: Assembling the genome 
+ Change the directory to just the workshop 02_Assembly by input "cd .." 
+ Preparing data assembly by creating a new directory for Quast<- "mkdir quast", then we create two directories called " flye_asm" and " redbean_asm" these assemblies contain two Vibrio chromosomes corresponding to two larger contigs
+ 
+Flye assembly/Amtp4_20x- assembly.fasta 
+ contig_63       5575- smallest
+ contig_60       1775300 - 2nd largest
+contig_10       3378345 - 1st largest
+ 
+ Redbean assembly/ 
+ length = 5164558, num fragments = 2, GC % = 44.92
+ 
+Running GlimmerHMM...
+  1  redbean_asm--Largest alignment = 1762981, NA50 = 1704110, NGA50 = 1704110, LA50 = 2, LGA50 = 2
+  2  flye_asm--Largest alignment = 2870131, NA50 = 2870131, NGA50 = 2870131, LA50 = 1, LGA50 = 1
+  
+  1    Genes = 4221 unique, 4221 total
+  1    Predicted genes (GFF): /home/jd131798/R/02_assembly/quast/quast_vibrio/predicted_genes/redbean_asm_glimmer_genes.gff
+  2    Genes = 4494 unique, 4503 total
+ - generates Circos plot and main report
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
